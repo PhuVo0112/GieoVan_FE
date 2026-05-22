@@ -40,7 +40,7 @@
     </div>
 
     <script>
-      const API_URL = "http://localhost:8000/api";
+      const API_BASE_URL = "https://gieovan.onrender.com";
       let currentLang = localStorage.getItem("preferred_lang") || "vi";
 
       const i18n = {
@@ -190,7 +190,7 @@
 
         const token = localStorage.getItem("access_token");
         try {
-          const res = await fetch(`${API_URL}/poems/my-poems`, {
+          const res = await fetch(`${API_BASE_URL}/api/poems/my-poems`, {
             headers: {
               "Authorization": `Bearer ${token}`
             }
@@ -271,7 +271,7 @@
 
         const token = localStorage.getItem("access_token");
         try {
-          const res = await fetch(`${API_URL}/poems/${poemId}/publish`, {
+          const res = await fetch(`${API_BASE_URL}/api/poems/${poemId}/publish`, {
             method: "PUT",
             headers: {
               "Authorization": `Bearer ${token}`
@@ -317,7 +317,7 @@
 
         const token = localStorage.getItem("access_token");
         try {
-          const res = await fetch(`${API_URL}/poems/${poemId}`, {
+          const res = await fetch(`${API_BASE_URL}/api/poems/${poemId}`, {
             method: "DELETE",
             headers: {
               "Authorization": `Bearer ${token}`
