@@ -1,13 +1,6 @@
 {
+    "cleanUrls": true,
     "rewrites": [
-        {
-            "source": "/api/login",
-            "destination": "https://gieovan.onrender.com/api/login"
-        },
-        {
-            "source": "/api/poems(.*)",
-            "destination": "https://gieovan.onrender.com/api/poems$1"
-        },
         {
             "source": "/login",
             "destination": "/login.html"
