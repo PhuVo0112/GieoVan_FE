@@ -1,0 +1,24 @@
+{
+    "rewrites": [
+        {
+            "source": "/login",
+            "destination": "/login.html"
+        },
+        {
+            "source": "/register",
+            "destination": "/register.html"
+        },
+        {
+            "source": "/feed",
+            "destination": "/feed.html"
+        },
+        {
+            "source": "/archive",
+            "destination": "/archive.html"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
